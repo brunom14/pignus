@@ -1,0 +1,63 @@
+#geral{
+	width: 600px;
+	margin:0 auto;
+}
+.postagem{
+	padding: 10px;
+	border: solid 1px #999999;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	text-align: justify;
+	margin-bottom: 5px;
+
+}
+
+.postagem p {
+	margin-bottom: 30px;
+}
+.abre_coment{
+	text-decoration: underline;
+}
+.abre_coment:hover{
+	cursor: pointer;
+}
+.abre_respostas{
+	text-decoration: underline;
+	margin-left: 50px;
+}
+.abre_respostas:hover{
+	cursor: pointer;
+}
+#comentarios{
+	background: #EEE;
+	margin-top: 15px;
+	padding: 10px;
+	display: none;
+}
+.comentarios{
+	background: #F7F7F7;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+#form_comentario{
+	margin-bottom: 20px;
+}
+input{
+	bottom: solid 1px #999999;
+}
+.campo{
+	font-style: italic;
+	color: #999999;
+}
+#respostas{
+	margin-left: 50px;
+	background: #EEE; 
+	margin-top: 10px;
+	display: none;
+}
+.respostas{
+	background: #fff; 
+	padding: 10px;
+	margin-bottom: : 10px;
+}

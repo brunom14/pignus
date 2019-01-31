@@ -1,0 +1,27 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(https://scontent.frec1-2.fna.fbcdn.net/v/t31.0-8/23550121_1178147025650683_1580258436995778328_o.jpg?_nc_cat=102&_nc_ht=scontent.frec1-2.fna&oh=127266d778327f5df23ae282c170b7c6&oe=5CF0286E)
+	no-repeat;
+	background-size: cover;
+}
+
+.login{
+
+	width: 280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.login h1{
+
+	float: left;
+	font-size: 40px;
+	border-bottom: 6px solid #4caf50;
+	margin-bottom: 50px;
+	padding: 13px 0;
+}

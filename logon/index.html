@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Projeto Pignus</title>
+      <link href="index.css" rel="stylesheet">
+      <!--fontes usadas no card de perfil-->
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <!--<input type="hidden" id="cod" value=" <?php echo $_SESSION['cod']; ?>-->
+      <div class="menu">
+         <!--div pra colocar foto -->
+         <div class="fotoperfil">
+            AIzaSyB3EbXfPIIAr7rrJwBXWVGkgfG9Ue6gDWM		<img id="perfil" src="https://scontent.frec1-2.fna.fbcdn.net/v/t1.0-9/48952599_1809479505828404_197159464405565440_n.jpg?_nc_cat=103&_nc_ht=scontent.frec1-2.fna&oh=623a53b1504a49beeee6b0c596f57d03&oe=5CF255F9">
+            <!---div pra botar nome do usuário-->
+            <div id="nomeuser">
+               <h2>Bruno Marrocos</h2>
+            </div>
+         </div>
+         <div class="infos">
+            <p <i class="fa fa-envelope info"></i> brunoalex_11@hotmail.com</p><br>
+            <!--adicionar postagem-->
+            <button id="modal-btn" class="button">Adicionar postagem</button>
+            <div id="popup" class="modal">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <span class="close">&times;</span>
+                     <h2>Post</h2>
+                  </div>
+                  <div class="modal-body">
+                     <p>Pignus</p>
+                     <div id="formpost">
+                        <div id="mensagens"></div>
+                        <form id="meuForm" enctype="multipart/form-data">
+                           <input type="file" name="arquivo[]" multiple="multiple" accept="image/jpg,image/png,image/jpeg,image/gif" />
+                           <br>
+                           <br>
+                           <button id="enviar">Subir imagem</button>
+                        </form>
+                        <form>
+                           <br/>Selecione o tipo do seu alerta:<br/>
+                           <select name="type" id="type">
+                              <option value="E">Infraestrura</option>
+                              <option value="A">Violência</option>
+                           </select>
+                           <br>
+                           fotoNome:<input id="foto" type="text" name="foto">
+                           <br/>Digite o título<br/>
+                           <input type="text" name="title" id="title">
+                           <br/>Digite a descrição<br/>
+                           <textarea name="desc" id="desc" rows="10" cols="30"></textarea>
+                           <input type="button" value="selecionar local" onclick="ligMarker();postagem();">
+                           <input type="button" value="cancela" onclick="formpost.style.visibility='hidden';formpost.style.Zindex='-10';">
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button id="modal" class="button">Adicionar postagem</button>
+            <div id="popup" class="modal">
+               <div class="abre">
+                  <span class="fechar">&times;</span>
+               </div >
+               <p>Adicionar postagem</p>
+            </div>
+            <input type="button" value="Marcar como resolvido" id="resolvido" onclick="resolvidof();">
+            <input type="button" value="Logout" onclick="Logout();">
+         </div>
+         </div
+         <div id="map"> </div>
+      </div>
+      </div>
+      <script type="text/javascript" src="modal.js"></script>
+      <script src="../jquery-3.3.1.min.js" type="text/javascript"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3EbXfPIIAr7rrJwBXWVGkgfG9Ue6gDWM"></script>
+      <script id="meta" src="js.js" type="text/javascript"></script>
+   </body>
+</html>

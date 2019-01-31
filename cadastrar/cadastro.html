@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CADASTRO USUARIO</title>
+		<link href="Pignus.css" rel="stylesheet">
+	<meta charset="utf-8">
+	
+</head>
+<body>
+
+	<form name="form" method="POST" onsubmit="return validacao();" action="processa.php">
+		<p>USUARIO:
+			<input type="text" name="usuario" id="usuario">
+		</p>
+		<p>SENHA:
+			<input type="password" name="senha" id="senha">
+		</p>
+		<p>CONFIRMAR SENHA:
+			<input type="password" name="csenha" id="csenha">
+		</p>
+		<p>EMAIL:
+			<input type="email" name="email" id="email">
+		</p>
+		<p>NOME:
+			<input type="text" name="nome" id="nome">
+		</p>
+		<p>*todos os campos são obrigatórios</p>
+		<p>
+			<input type="submit" name="submit" value="CADASTRAR">
+		</p>
+	</form>
+
+	<script src="../jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script id="meta" src="cadastro.js" type="text/javascript"></script>
+</body>
+</html>

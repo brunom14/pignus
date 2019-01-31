@@ -1,0 +1,17 @@
+
+#menu,#map,#post{
+			float: left;
+			height: 650px;
+			border: 1px line-height black;
+		}
+#menu{width: 20%;}
+#map{width: 80%;}
+#formpost{	
+			width:19%;
+			height: 400px;
+			position:absolute;	
+		}
+
+
+
+
